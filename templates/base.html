@@ -1,0 +1,24 @@
+{# templates/base.html #}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        {% for font in passbot_fonts %}
+        @font-face {
+            font-family: {{ font.name }};
+            src: url("data:image/png;base64,{{ font.base64 }}");
+        }
+        {% endfor %}
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    <h1 style="font-family: JINGNAN_BOBO_HEI;">模板中没有载入任何内容</h1>
+    {% endblock content %}
+</body>
+
+</html>

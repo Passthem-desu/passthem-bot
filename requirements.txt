@@ -13,3 +13,5 @@ aiosqlite
 pytz
 qrcode
 freezegun
+html2image
+jinja2
