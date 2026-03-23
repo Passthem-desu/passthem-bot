@@ -28,6 +28,9 @@ class Config(BaseModel):
     test_april_fool: bool = False
     "是否测试愚人节笑话"
 
+    april_fool_disable: bool = False
+    "添加选项以完全禁用愚人节笑话"
+
     do_check_sign_date: bool = True
     "是否检查签到连胜"
 

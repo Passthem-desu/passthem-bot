@@ -53,6 +53,8 @@ def is_holiday(time: datetime.datetime | None = None) -> bool:
 
 
 def is_april_fool(time: datetime.datetime | None = None) -> bool:
+    if get_config().april_fool_disable:
+        return False
     if time is None:
         time = now_datetime()
     return (
